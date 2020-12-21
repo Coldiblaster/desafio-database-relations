@@ -25,7 +25,7 @@ export default class CreateOrdersProducts1607782615302
             isNullable: true,
           },
           {
-            name: 'prince',
+            name: 'price',
             type: 'decimal',
             precision: 10,
             scale: 2,
@@ -33,6 +33,16 @@ export default class CreateOrdersProducts1607782615302
           {
             name: 'quantity',
             type: 'int',
+          },
+          {
+            name: 'created_at',
+            type: 'timestamp',
+            default: 'now()',
+          },
+          {
+            name: 'updated_at',
+            type: 'timestamp',
+            default: 'now()',
           },
         ],
         foreignKeys: [
